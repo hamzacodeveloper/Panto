@@ -1,0 +1,2435 @@
+.panto-home-page {
+  --home-accent: #e58411;
+  --home-ink: #1e1e1e;
+  --home-muted: #8d8d8d;
+  --home-navy: #0d1b39;
+  --home-soft: #f7f7f7;
+  width: 100%;
+  overflow: hidden;
+  color: var(--home-ink);
+  background: #fff;
+  font-family: "Gilroy", var(--font-geist-sans), Arial, sans-serif;
+}
+
+.panto-home-page *,
+.panto-home-page *::before,
+.panto-home-page *::after {
+  box-sizing: border-box;
+}
+
+.panto-home-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.panto-home-page .panto-hero {
+  position: relative;
+  height: 1084px;
+  overflow: hidden;
+  color: #fff;
+  background: #292a2b;
+}
+
+.panto-home-page .panto-hero-compact {
+  height: 660px;
+}
+
+.panto-home-page .panto-hero-compact .panto-hero-title {
+  top: 190px;
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+.panto-home-page .panto-hero-compact .panto-hero-copy {
+  top: 365px;
+}
+
+.panto-home-page .panto-hero-image {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.panto-home-page .panto-hero-shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(255 255 255 / 0%) 86.133%,
+    #fff 100%
+  );
+}
+
+.panto-home-page .panto-header {
+  position: absolute;
+  z-index: 3;
+  top: 40px;
+  left: 50%;
+  display: flex;
+  width: min(1280px, calc(100% - 96px));
+  height: 38px;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-brand,
+.panto-home-page .panto-footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.panto-home-page .panto-navigation {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-left: 80px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.panto-home-page .panto-wishlist-navigation-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.panto-home-page .panto-wishlist-navigation-count {
+  display: inline-grid;
+  min-width: 22px;
+  height: 22px;
+  place-items: center;
+  padding: 0 6px;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.panto-home-page .panto-nav-furniture {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panto-home-page .panto-nav-furniture img {
+  transform: rotate(-90deg);
+}
+
+.panto-home-page .panto-cart-link {
+  position: relative;
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+}
+
+.panto-home-page .panto-cart-count {
+  position: absolute;
+  top: -30px;
+  right: -6px;
+}
+
+.panto-home-page .panto-mobile-navigation {
+  display: none;
+}
+
+.panto-home-page .panto-hero-title {
+  position: absolute;
+  z-index: 2;
+  top: 161px;
+  left: 50%;
+  display: flex;
+  width: min(1000px, calc(100% - 48px));
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: capitalize;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-hero-title span {
+  display: block;
+}
+
+.panto-home-page .panto-hero-copy {
+  position: absolute;
+  z-index: 2;
+  top: 383px;
+  left: 50%;
+  width: min(606px, calc(100% - 48px));
+  margin: 0;
+  color: rgb(255 255 255 / 82%);
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-search-form {
+  position: absolute;
+  z-index: 2;
+  top: 504px;
+  left: 50%;
+  display: flex;
+  width: 344px;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 8px 8px 20px;
+  border: 1px solid rgb(255 255 255 / 60%);
+  border-radius: 42px;
+  background: rgb(255 255 255 / 15%);
+  backdrop-filter: blur(4px);
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-search-form input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background: transparent;
+  font: inherit;
+  font-size: 18px;
+}
+
+.panto-home-page .panto-search-form input::placeholder {
+  color: rgb(255 255 255 / 82%);
+  opacity: 1;
+}
+
+.panto-home-page .panto-search-form input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.panto-home-page .panto-search-form button {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--home-accent);
+  cursor: pointer;
+}
+
+.panto-home-page .panto-hero-hotspots {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+}
+
+.panto-home-page .panto-hero-hotspots img {
+  position: absolute;
+}
+
+.panto-home-page .panto-hero-hotspots > img:nth-child(1) {
+  top: 68.5%;
+  left: 7.15%;
+}
+
+.panto-home-page .panto-hero-hotspots > img:nth-child(2) {
+  top: 71.8%;
+  left: 55.55%;
+}
+
+.panto-home-page .panto-hero-hotspots > img:nth-child(3) {
+  top: 74.6%;
+  right: 2.35%;
+}
+
+.panto-home-page .panto-hero-controls {
+  position: absolute;
+  top: 54%;
+  left: 17.29%;
+  width: 112px;
+  height: 56px;
+}
+
+.panto-home-page .panto-hero-controls-bubble {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.panto-home-page .panto-hero-controls-options {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.panto-home-page .panto-hero-controls-options span {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.panto-home-page .panto-hero-controls-options img {
+  position: absolute;
+  top: -2px;
+  left: -6px;
+  width: 36px;
+  height: 36px;
+  max-width: none;
+}
+
+.panto-home-page .panto-hero-controls-check {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+}
+
+.panto-home-page .panto-hero-controls-orb {
+  position: absolute;
+  top: 81.6px;
+  left: 28px;
+}
+
+.panto-home-page .panto-features-section {
+  height: 420px;
+  padding: 120px 0 0;
+  background: #fff;
+}
+
+.panto-home-page .panto-features-layout {
+  display: grid;
+  width: min(1280px, calc(100% - 160px));
+  grid-template-columns: 284px minmax(0, 1fr);
+  gap: 88px;
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-features-title {
+  align-self: center;
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.panto-home-page .panto-feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.panto-home-page .panto-feature-item h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.panto-home-page .panto-feature-item p,
+.panto-home-page .panto-body-copy {
+  margin: 0;
+  color: rgb(30 30 30 / 80%);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.panto-home-page .panto-feature-item p {
+  min-height: 111px;
+}
+
+.panto-home-page .panto-more-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--home-accent) !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.85;
+  white-space: nowrap;
+}
+
+.panto-home-page .panto-more-info img {
+  width: 48px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.panto-home-page .panto-products-section {
+  height: 906px;
+  padding: 50px 0 0;
+  background: var(--home-soft);
+  text-align: center;
+}
+
+.panto-home-page .panto-products-container {
+  width: min(1198px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-section-title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.panto-home-page .panto-category-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-top: 32px;
+  padding: 6px;
+  border-radius: 44px;
+  background: #eee;
+}
+
+.panto-home-page .panto-category-button {
+  min-width: 84px;
+  height: 45px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 32px;
+  color: var(--home-ink);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 16px;
+  opacity: 0.8;
+  transition:
+    background-color 160ms ease,
+    opacity 160ms ease;
+}
+
+.panto-home-page .panto-category-button:hover {
+  opacity: 1;
+}
+
+.panto-home-page .panto-category-active {
+  background: #fff;
+  opacity: 1;
+}
+
+.panto-home-page .panto-shop-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+  margin: 20px 0 -36px;
+  color: var(--home-muted);
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.panto-home-page .panto-shop-contact a:hover {
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 42px;
+  margin-top: 131px;
+  text-align: left;
+}
+
+.panto-home-page .panto-products-section-shop .panto-product-grid {
+  margin-top: 88px;
+}
+
+.panto-home-page .panto-product-card {
+  position: relative;
+  height: 442px;
+  min-width: 0;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.panto-home-page .panto-product-media {
+  position: absolute;
+  z-index: 3;
+  top: -50px;
+  left: 50%;
+  width: 100%;
+  height: 256px;
+  overflow: visible;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-product-card-backdrop {
+  z-index: 0;
+  top: 50px !important;
+  height: 239px !important;
+  object-fit: fill;
+}
+
+.panto-home-page .panto-product-image {
+  z-index: 1;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.panto-home-page .panto-product-detail-image-link {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+.panto-home-page .panto-wishlist-button {
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  right: 12px;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: var(--home-ink);
+  background: #fff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.panto-home-page .panto-wishlist-button:hover:not(:disabled) {
+  transform: scale(1.08);
+}
+
+.panto-home-page .panto-wishlist-button[aria-pressed="true"] {
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-wishlist-button:disabled {
+  cursor: wait;
+}
+
+.panto-home-page .panto-wishlist-button svg {
+  width: 21px;
+  height: 21px;
+}
+
+.panto-home-page .panto-product-info h3 a:hover,
+.panto-home-page .panto-product-detail-back:hover {
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-wishlist-section {
+  min-height: 420px;
+  padding: 72px 0 96px;
+  background: #fff;
+}
+
+.panto-home-page .panto-wishlist-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.panto-home-page .panto-wishlist-heading p {
+  margin: 10px 0 0;
+  color: var(--home-muted);
+  font-size: 14px;
+}
+
+.panto-home-page .panto-wishlist-clear {
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid rgb(30 30 30 / 16%);
+  border-radius: 24px;
+  color: var(--home-ink);
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.panto-home-page .panto-wishlist-clear:hover {
+  border-color: var(--home-accent);
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-wishlist-loading,
+.panto-home-page .panto-wishlist-empty {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.panto-home-page .panto-wishlist-empty {
+  padding: 40px 20px;
+}
+
+.panto-home-page .panto-wishlist-empty svg {
+  width: 54px;
+  height: 54px;
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-wishlist-empty h3 {
+  margin: 20px 0 8px;
+  color: var(--home-navy);
+  font-size: 24px;
+}
+
+.panto-home-page .panto-wishlist-empty p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--home-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.panto-home-page .panto-wishlist-continue {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 0 24px;
+  border-radius: 26px;
+  color: #fff !important;
+  background: var(--home-accent);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 160ms ease;
+}
+
+.panto-home-page .panto-wishlist-continue:hover {
+  background: #d97809;
+}
+
+.panto-home-page .panto-wishlist-grid {
+  margin-top: 48px;
+}
+
+.panto-home-page .panto-product-detail-section {
+  padding: 88px 0 112px;
+  background: #fff;
+}
+
+.panto-home-page .panto-product-detail-layout {
+  display: grid;
+  width: min(1198px, calc(100% - 64px));
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-product-detail-image {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--home-soft);
+}
+
+.panto-home-page .panto-product-detail-image img {
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.panto-home-page .panto-product-detail-copy {
+  max-width: 500px;
+}
+
+.panto-home-page .panto-product-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 48px;
+  color: var(--home-muted);
+  font-size: 14px;
+  transition: color 160ms ease;
+}
+
+.panto-home-page .panto-product-detail-copy .panto-section-eyebrow {
+  margin-bottom: 14px;
+}
+
+.panto-home-page .panto-product-detail-copy h2 {
+  margin: 0;
+  color: var(--home-navy);
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.15;
+}
+
+.panto-home-page .panto-product-detail-rating {
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.panto-home-page .panto-product-detail-rating span {
+  margin-left: 8px;
+  color: var(--home-muted);
+  font-size: 14px;
+}
+
+.panto-home-page .panto-product-detail-description {
+  margin: 24px 0;
+  color: rgb(30 30 30 / 75%);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.panto-home-page .panto-product-detail-price {
+  margin: 0;
+  color: var(--home-navy);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.panto-home-page .panto-product-detail-price span {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.panto-home-page .panto-product-detail-availability {
+  margin: 10px 0 26px;
+  color: var(--home-muted);
+  font-size: 14px;
+}
+
+.panto-home-page .panto-product-detail-cta {
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border-radius: 28px;
+  color: #fff !important;
+  background: var(--home-accent);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 160ms ease;
+}
+
+.panto-home-page .panto-product-detail-cta:hover {
+  background: #d97809;
+}
+
+.panto-home-page .panto-product-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.panto-home-page .panto-wishlist-button.panto-product-detail-wishlist {
+  position: static;
+  z-index: auto;
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  border: 1px solid rgb(30 30 30 / 14%);
+  box-shadow: none;
+}
+
+.panto-home-page .panto-product-detail-error {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.panto-home-page .panto-product-detail-error a {
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-product-info {
+  position: relative;
+  z-index: 2;
+  padding: 250px 21px 20px;
+}
+
+.panto-home-page .panto-product-category {
+  margin: 0 0 5px;
+  color: var(--home-muted);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.panto-home-page .panto-product-info h3 {
+  min-height: 26px;
+  margin: 0;
+  color: var(--home-navy);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.panto-home-page .panto-product-rating,
+.panto-home-page .panto-review-rating {
+  display: flex;
+  align-items: center;
+}
+
+.panto-home-page .panto-product-rating {
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.panto-home-page .panto-product-rating img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.panto-home-page .panto-product-rating .panto-rating-star-muted {
+  opacity: 0.25;
+}
+
+.panto-home-page .panto-product-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.panto-home-page .panto-product-price {
+  margin: 0;
+  color: var(--home-navy);
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.panto-home-page .panto-product-price span {
+  margin-right: 4px;
+  font-size: 15px;
+}
+
+.panto-home-page .panto-add-button {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--home-navy);
+  cursor: pointer;
+  transition: transform 160ms ease;
+}
+
+.panto-home-page .panto-add-button:hover {
+  transform: scale(1.06);
+}
+
+.panto-home-page .panto-add-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.panto-home-page .panto-added-status {
+  position: absolute;
+  right: 21px;
+  bottom: -7px;
+  margin: 0;
+  color: var(--home-accent);
+  font-size: 12px;
+}
+
+.panto-home-page .panto-no-products {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 80px 0;
+  color: var(--home-muted);
+  text-align: center;
+}
+
+.panto-home-page .panto-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 80px;
+  color: var(--home-accent) !important;
+  font-size: 14px;
+}
+
+.panto-home-page .panto-view-all img {
+  width: 48px;
+  height: 24px;
+}
+
+.panto-home-page .panto-experience-section {
+  position: relative;
+  height: 1021px;
+  padding-top: 306px;
+}
+
+.panto-home-page .panto-experience-layout {
+  display: grid;
+  width: min(1280px, calc(100% - 160px));
+  height: 445px;
+  grid-template-columns: minmax(0, 629px) minmax(0, 1fr);
+  align-items: center;
+  gap: 34px;
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-experience-photo {
+  position: relative;
+  left: -80px;
+  width: 629px;
+  height: 445px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 26px 36px rgb(34 29 22 / 18%);
+}
+
+.panto-home-page .panto-experience-photo img {
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.panto-home-page .panto-experience-copy {
+  max-width: 556px;
+  padding-top: 12px;
+}
+
+.panto-home-page .panto-section-eyebrow {
+  margin: 0 0 17px;
+  color: var(--home-accent);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3.15px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.panto-home-page .panto-experience-copy h2,
+.panto-home-page .panto-materials-copy h2 {
+  margin: 0 0 20px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.panto-home-page .panto-experience-copy .panto-body-copy,
+.panto-home-page .panto-materials-copy .panto-body-copy {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.panto-home-page .panto-materials-section {
+  position: relative;
+  height: 854px;
+}
+
+.panto-home-page .panto-materials-layout {
+  position: relative;
+  width: min(1280px, calc(100% - 160px));
+  height: 593px;
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-materials-copy {
+  position: absolute;
+  top: 124px;
+  left: 0;
+  z-index: 1;
+  width: min(556px, 44%);
+}
+
+.panto-home-page .panto-materials-copy h2 {
+  max-width: 413px;
+  margin-bottom: 22px;
+}
+
+.panto-home-page .panto-materials-gallery {
+  position: absolute;
+  top: 0;
+  left: calc(50% + 10px);
+  width: 894px;
+  height: 593px;
+}
+
+.panto-home-page .panto-materials-main-image,
+.panto-home-page .panto-materials-top-image,
+.panto-home-page .panto-materials-bottom-image {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.panto-home-page .panto-materials-main-image {
+  top: 139px;
+  right: 0;
+  width: 629px;
+  height: 445px;
+  box-shadow: 0 26px 36px rgb(34 29 22 / 18%);
+}
+
+.panto-home-page .panto-materials-main-image img,
+.panto-home-page .panto-materials-top-image img,
+.panto-home-page .panto-materials-bottom-image img {
+  object-fit: cover;
+}
+
+.panto-home-page .panto-materials-top-image {
+  top: 0;
+  left: 0;
+  width: 223px;
+  height: 229px;
+}
+
+.panto-home-page .panto-materials-bottom-image {
+  top: 276px;
+  left: 0;
+  width: 223px;
+  height: 317px;
+}
+
+.panto-home-page .panto-contact-section {
+  padding: 112px 0;
+  background: #fff;
+}
+
+.panto-home-page .panto-contact-layout {
+  display: grid;
+  width: min(1198px, calc(100% - 64px));
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: start;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-contact-copy {
+  max-width: 460px;
+  padding-top: 12px;
+}
+
+.panto-home-page .panto-contact-copy h2 {
+  margin: 0 0 20px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.panto-home-page .panto-contact-copy .panto-body-copy {
+  margin: 0;
+  color: rgb(30 30 30 / 80%);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.panto-home-page .panto-contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid rgb(30 30 30 / 8%);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgb(34 29 22 / 8%);
+}
+
+.panto-home-page .panto-contact-fields {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 18px;
+}
+
+.panto-home-page .panto-contact-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: var(--home-ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.panto-home-page .panto-contact-fields input,
+.panto-home-page .panto-contact-fields textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid rgb(30 30 30 / 14%);
+  border-radius: 10px;
+  outline-color: var(--home-accent);
+  color: var(--home-ink);
+  background: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.panto-home-page .panto-contact-fields input {
+  height: 48px;
+}
+
+.panto-home-page .panto-contact-fields textarea {
+  min-height: 148px;
+  resize: vertical;
+}
+
+.panto-home-page .panto-contact-message-field {
+  grid-column: 1 / -1;
+}
+
+.panto-home-page .panto-contact-submit {
+  min-height: 48px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  background: var(--home-accent);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+.panto-home-page .panto-contact-status {
+  margin: -8px 0 0;
+  color: rgb(30 30 30 / 70%);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.panto-home-page .panto-testimonials-section {
+  position: relative;
+  height: 875px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.panto-home-page .panto-testimonials-heading .panto-section-eyebrow {
+  margin-bottom: 22px;
+}
+
+.panto-home-page .panto-testimonials-heading h2 {
+  width: min(413px, calc(100% - 40px));
+  margin: 0 auto;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.panto-home-page .panto-testimonials-content {
+  position: relative;
+  width: min(1188px, calc(100% - 64px));
+  margin: 63px auto 0;
+}
+
+.panto-home-page .panto-review-list {
+  display: flex;
+  gap: 39px;
+  overflow: auto hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.panto-home-page .panto-review-list::-webkit-scrollbar {
+  display: none;
+}
+
+.panto-home-page .panto-review-card {
+  position: relative;
+  width: 370px;
+  height: 476px;
+  flex: 0 0 370px;
+  scroll-snap-align: center;
+}
+
+.panto-home-page .panto-review-photo-frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.panto-home-page .panto-review-photo {
+  object-fit: cover;
+}
+
+.panto-home-page .panto-review-details {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.panto-home-page .panto-review-shape {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  width: calc(100% - 36px);
+  height: 50.21%;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-review-avatar {
+  position: absolute;
+  top: 47.69%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-review-details h3 {
+  position: absolute;
+  top: 60.71%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+.panto-home-page .panto-review-role {
+  position: absolute;
+  top: 66.68%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: rgb(30 30 30 / 60%);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.panto-home-page .panto-review-quote {
+  position: absolute;
+  top: 74.24%;
+  left: 50%;
+  width: min(252px, calc(100% - 56px));
+  margin: 0;
+  color: rgb(30 30 30 / 80%);
+  font-size: 14px;
+  line-height: 1.2;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-review-rating {
+  position: absolute;
+  top: 89.58%;
+  left: 50%;
+  display: flex;
+  gap: 5px;
+  transform: translateX(-50%);
+}
+
+.panto-home-page .panto-review-rating img {
+  width: 14px;
+  height: 14px;
+}
+
+.panto-home-page .panto-review-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 144px;
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 7px 10px rgb(0 0 0 / 8%);
+  cursor: pointer;
+}
+
+.panto-home-page .panto-review-arrow img {
+  width: 26px;
+  height: 26px;
+}
+
+.panto-home-page .panto-review-previous {
+  left: -25px;
+}
+
+.panto-home-page .panto-review-previous img {
+  transform: rotate(180deg);
+}
+
+.panto-home-page .panto-review-next {
+  right: -25px;
+}
+
+.panto-home-page .panto-footer {
+  position: relative;
+  height: 462px;
+  padding: 118px max(24px, calc((100% - 1064px) / 2)) 0;
+  background: var(--home-soft);
+}
+
+.panto-home-page .panto-footer-main {
+  display: grid;
+  grid-template-columns: 2fr 0.9fr 0.9fr 0.9fr;
+  gap: 48px;
+}
+
+.panto-home-page .panto-footer-brand {
+  max-width: 300px;
+}
+
+.panto-home-page .panto-footer-logo {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--home-ink) !important;
+  font-size: 24px;
+}
+
+.panto-home-page .panto-footer-brand p {
+  margin: 0;
+  color: rgb(30 30 30 / 80%);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.panto-home-page .panto-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.panto-home-page .panto-footer-column h2 {
+  margin: 0 0 8px;
+  color: #f6973f;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.panto-home-page .panto-footer-column a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(30 30 30 / 80%);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.panto-home-page .panto-footer-column a:hover,
+.panto-home-page .panto-footer-bottom a:hover {
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-footer-bottom {
+  position: absolute;
+  right: max(24px, calc((100% - 1064px) / 2));
+  bottom: 48px;
+  left: max(24px, calc((100% - 1064px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(30 40 51 / 50%);
+  font-size: 13px;
+}
+
+.panto-home-page .panto-footer-bottom p {
+  margin: 0;
+}
+
+.panto-home-page .panto-footer-bottom div {
+  display: flex;
+  gap: 40px;
+  color: rgb(30 30 30 / 80%);
+}
+
+.panto-home-page .panto-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.panto-route-loading {
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  place-items: center;
+  padding: 24px;
+  color: var(--home-ink, #1e1e1e);
+  background:
+    radial-gradient(ellipse at 50% 45%, rgb(229 132 17 / 7%), transparent 42%),
+    #fff;
+  font-family: "Gilroy", var(--font-geist-sans), Arial, sans-serif;
+}
+
+.panto-route-loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panto-route-loading-logo {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.panto-route-loading-indicator {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  gap: 9px;
+  margin: 20px 0 12px;
+}
+
+.panto-route-loading-indicator span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--home-accent, #e58411);
+  animation: panto-loading-pulse 900ms ease-in-out infinite;
+}
+
+.panto-route-loading-indicator span:nth-child(2) {
+  animation-delay: 140ms;
+}
+
+.panto-route-loading-indicator span:nth-child(3) {
+  animation-delay: 280ms;
+}
+
+.panto-route-loading-message {
+  color: rgb(30 30 30 / 62%);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+@keyframes panto-loading-pulse {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+
+  30% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panto-route-loading-indicator span {
+    animation: none;
+  }
+}
+
+.panto-home-page .panto-not-found-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 82% 45%, rgb(229 132 17 / 7%), transparent 34%),
+    #fff;
+}
+
+.panto-home-page .panto-not-found-header {
+  display: flex;
+  width: min(1280px, calc(100% - 96px));
+  height: 100px;
+  flex: 0 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.panto-home-page .panto-not-found-logo {
+  color: var(--home-ink);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.panto-home-page .panto-not-found-header nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  color: rgb(30 30 30 / 80%);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.panto-home-page .panto-not-found-header nav a,
+.panto-home-page .panto-not-found-shop-link {
+  transition: color 160ms ease;
+}
+
+.panto-home-page .panto-not-found-header nav a:hover,
+.panto-home-page .panto-not-found-shop-link:hover {
+  color: var(--home-accent);
+}
+
+.panto-home-page .panto-not-found-main {
+  display: grid;
+  width: min(1180px, calc(100% - 96px));
+  min-height: 610px;
+  flex: 1;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: 44px;
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.panto-home-page .panto-not-found-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+}
+
+.panto-home-page .panto-not-found-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  color: var(--home-accent);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.panto-home-page .panto-not-found-eyebrow span,
+.panto-home-page .panto-not-found-note-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: var(--home-accent);
+}
+
+.panto-home-page .panto-not-found-code {
+  margin: 0;
+  color: var(--home-accent);
+  font-size: clamp(100px, 13vw, 176px);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+}
+
+.panto-home-page .panto-not-found-copy h1 {
+  margin: 18px 0 14px;
+  color: var(--home-ink);
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.panto-home-page .panto-not-found-description {
+  max-width: 430px;
+  margin: 0;
+  color: rgb(30 30 30 / 66%);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.panto-home-page .panto-not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.panto-home-page .panto-not-found-home-link {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  gap: 14px;
+  padding: 0 24px;
+  border-radius: 30px;
+  color: #fff;
+  background: var(--home-accent);
+  box-shadow: 0 10px 24px rgb(229 132 17 / 22%);
+  font-size: 15px;
+  font-weight: 600;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.panto-home-page .panto-not-found-home-link:hover {
+  transform: translateY(-2px);
+  background: #d97809;
+}
+
+.panto-home-page .panto-not-found-home-link span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.panto-home-page .panto-not-found-shop-link {
+  color: var(--home-ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.panto-home-page .panto-not-found-art {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  place-items: center;
+}
+
+.panto-home-page .panto-not-found-orbit {
+  position: absolute;
+  width: min(440px, 90%);
+  aspect-ratio: 1;
+  border: 1px solid rgb(229 132 17 / 20%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 45%, #fff 0%, #fff 50%, rgb(229 132 17 / 8%) 100%);
+  box-shadow:
+    0 0 0 26px rgb(229 132 17 / 3%),
+    0 28px 80px rgb(30 30 30 / 8%);
+}
+
+.panto-home-page .panto-not-found-chair {
+  position: relative;
+  z-index: 1;
+  width: min(430px, 92%);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 26px 26px rgb(30 30 30 / 13%));
+}
+
+.panto-home-page .panto-not-found-note {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 42px;
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 18px;
+  border: 1px solid rgb(255 255 255 / 70%);
+  border-radius: 28px;
+  color: var(--home-ink);
+  background: rgb(255 255 255 / 84%);
+  box-shadow: 0 14px 36px rgb(30 30 30 / 10%);
+  font-size: 13px;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+}
+
+.panto-home-page .panto-not-found-note-dot {
+  width: 9px;
+  height: 9px;
+  flex-basis: 9px;
+}
+
+.panto-home-page .panto-not-found-page .panto-footer {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .panto-home-page .panto-hero-title {
+    font-size: 68px;
+  }
+
+  .panto-home-page .panto-navigation {
+    gap: 36px;
+    margin-left: 40px;
+  }
+
+  .panto-home-page .panto-features-layout,
+  .panto-home-page .panto-experience-layout,
+  .panto-home-page .panto-materials-layout {
+    width: calc(100% - 96px);
+  }
+
+  .panto-home-page .panto-features-layout {
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 48px;
+  }
+
+  .panto-home-page .panto-feature-list {
+    gap: 20px;
+  }
+
+  .panto-home-page .panto-feature-item h3 {
+    font-size: 21px;
+  }
+
+  .panto-home-page .panto-product-grid {
+    gap: 24px;
+  }
+
+  .panto-home-page .panto-materials-gallery {
+    right: -48px;
+    transform: scale(0.82);
+    transform-origin: top right;
+  }
+}
+
+@media (min-width: 1201px) {
+  .panto-home-page .panto-testimonials-content {
+    margin-left: max(32px, calc((100vw - 1188px) / 2));
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .panto-home-page .panto-product-detail-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 40px;
+  }
+
+  .panto-home-page .panto-product-detail-image {
+    min-height: 420px;
+  }
+
+  .panto-home-page .panto-not-found-header,
+  .panto-home-page .panto-not-found-main {
+    width: calc(100% - 64px);
+  }
+
+  .panto-home-page .panto-not-found-main {
+    min-height: 560px;
+    gap: 20px;
+  }
+
+  .panto-home-page .panto-not-found-art {
+    min-height: 420px;
+  }
+
+  .panto-home-page .panto-not-found-orbit {
+    width: min(360px, 90%);
+  }
+
+  .panto-home-page .panto-not-found-chair {
+    width: min(350px, 92%);
+  }
+
+  .panto-home-page .panto-not-found-note {
+    right: -8px;
+    bottom: 24px;
+  }
+
+  .panto-home-page .panto-hero {
+    height: 900px;
+  }
+
+  .panto-home-page .panto-hero-compact {
+    height: 640px;
+  }
+
+  .panto-home-page .panto-header {
+    width: calc(100% - 64px);
+  }
+
+  .panto-home-page .panto-navigation {
+    gap: 24px;
+    font-size: 16px;
+  }
+
+  .panto-home-page .panto-hero-title {
+    top: 165px;
+    font-size: clamp(48px, 7vw, 64px);
+  }
+
+  .panto-home-page .panto-hero-copy {
+    top: 354px;
+    font-size: 20px;
+  }
+
+  .panto-home-page .panto-search-form {
+    top: 470px;
+  }
+
+  .panto-home-page .panto-features-section,
+  .panto-home-page .panto-products-section,
+  .panto-home-page .panto-experience-section,
+  .panto-home-page .panto-materials-section,
+  .panto-home-page .panto-testimonials-section,
+  .panto-home-page .panto-footer {
+    height: auto;
+  }
+
+  .panto-home-page .panto-features-section {
+    padding: 80px 0;
+  }
+
+  .panto-home-page .panto-features-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .panto-home-page .panto-features-title br {
+    display: none;
+  }
+
+  .panto-home-page .panto-feature-item p {
+    min-height: 130px;
+  }
+
+  .panto-home-page .panto-products-section {
+    padding: 56px 0 80px;
+  }
+
+  .panto-home-page .panto-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 268px));
+    justify-content: center;
+    row-gap: 96px;
+    margin-top: 104px;
+  }
+
+  .panto-home-page .panto-view-all {
+    margin-top: 60px;
+  }
+
+  .panto-home-page .panto-experience-section {
+    padding: 100px 0 0;
+  }
+
+  .panto-home-page .panto-experience-layout {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .panto-home-page .panto-experience-photo {
+    left: 0;
+    width: 100%;
+    height: 360px;
+  }
+
+  .panto-home-page .panto-experience-copy h2,
+  .panto-home-page .panto-materials-copy h2,
+  .panto-home-page .panto-testimonials-heading h2 {
+    font-size: 36px;
+  }
+
+  .panto-home-page .panto-experience-copy .panto-body-copy,
+  .panto-home-page .panto-materials-copy .panto-body-copy {
+    font-size: 16px;
+  }
+
+  .panto-home-page .panto-materials-section {
+    padding: 120px 0 80px;
+  }
+
+  .panto-home-page .panto-materials-layout {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .panto-home-page .panto-materials-copy {
+    position: static;
+    width: min(556px, 100%);
+  }
+
+  .panto-home-page .panto-materials-gallery {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 760px;
+    height: 500px;
+    align-self: center;
+    transform: none;
+  }
+
+  .panto-home-page .panto-materials-main-image {
+    top: 60px;
+    right: 0;
+    width: min(76%, 560px);
+    height: 400px;
+  }
+
+  .panto-home-page .panto-materials-top-image {
+    width: 29%;
+    height: 205px;
+  }
+
+  .panto-home-page .panto-materials-bottom-image {
+    top: 240px;
+    width: 29%;
+    height: 240px;
+  }
+
+  .panto-home-page .panto-testimonials-section {
+    height: auto;
+    padding: 56px 0 100px;
+  }
+
+  .panto-home-page .panto-contact-section {
+    padding: 88px 0;
+  }
+
+  .panto-home-page .panto-contact-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 40px;
+  }
+
+  .panto-home-page .panto-contact-copy h2 {
+    font-size: 36px;
+  }
+
+  .panto-home-page .panto-contact-copy .panto-body-copy {
+    font-size: 16px;
+  }
+
+  .panto-home-page .panto-testimonials-content {
+    margin-top: 48px;
+  }
+
+  .panto-home-page .panto-review-list {
+    gap: 24px;
+  }
+
+  .panto-home-page .panto-footer {
+    min-height: 420px;
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
+
+  .panto-home-page .panto-footer-bottom {
+    bottom: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .panto-home-page .panto-product-detail-section {
+    padding: 48px 0 72px;
+  }
+
+  .panto-home-page .panto-product-detail-layout {
+    width: calc(100% - 40px);
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .panto-home-page .panto-product-detail-image {
+    min-height: min(82vw, 360px);
+  }
+
+  .panto-home-page .panto-product-detail-back {
+    margin-bottom: 32px;
+  }
+
+  .panto-home-page .panto-not-found-header {
+    width: calc(100% - 40px);
+    height: 76px;
+    flex-basis: 76px;
+  }
+
+  .panto-home-page .panto-not-found-logo {
+    font-size: 24px;
+  }
+
+  .panto-home-page .panto-not-found-header nav {
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  .panto-home-page .panto-not-found-main {
+    width: calc(100% - 40px);
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+    padding: 48px 0 42px;
+  }
+
+  .panto-home-page .panto-not-found-copy {
+    max-width: none;
+  }
+
+  .panto-home-page .panto-not-found-eyebrow {
+    margin-bottom: 14px;
+    font-size: 11px;
+  }
+
+  .panto-home-page .panto-not-found-code {
+    font-size: clamp(92px, 27vw, 132px);
+  }
+
+  .panto-home-page .panto-not-found-copy h1 {
+    margin-top: 12px;
+    font-size: clamp(32px, 9vw, 42px);
+  }
+
+  .panto-home-page .panto-not-found-description {
+    font-size: 15px;
+  }
+
+  .panto-home-page .panto-not-found-actions {
+    gap: 18px;
+    margin-top: 24px;
+  }
+
+  .panto-home-page .panto-not-found-home-link {
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 14px;
+  }
+
+  .panto-home-page .panto-not-found-shop-link {
+    font-size: 14px;
+  }
+
+  .panto-home-page .panto-not-found-art {
+    min-height: min(82vw, 340px);
+  }
+
+  .panto-home-page .panto-not-found-orbit {
+    width: min(300px, 82vw);
+  }
+
+  .panto-home-page .panto-not-found-chair {
+    width: min(300px, 82vw);
+  }
+
+  .panto-home-page .panto-not-found-note {
+    right: 0;
+    bottom: 8px;
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+
+  .panto-home-page .panto-hero {
+    height: 780px;
+  }
+
+  .panto-home-page .panto-hero-compact {
+    height: 540px;
+  }
+
+  .panto-home-page .panto-hero-image {
+    object-position: 52% center;
+  }
+
+  .panto-home-page .panto-hero-shade {
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 20%) 0%,
+      rgb(0 0 0 / 10%) 55%,
+      rgb(255 255 255 / 0%) 86.133%,
+      #fff 100%
+    );
+  }
+
+  .panto-home-page .panto-header {
+    top: 24px;
+    width: calc(100% - 40px);
+  }
+
+  .panto-home-page .panto-brand {
+    font-size: 24px;
+  }
+
+  .panto-home-page .panto-navigation {
+    display: none;
+  }
+
+  .panto-home-page .panto-cart-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .panto-home-page .panto-hero-controls {
+    display: none;
+    margin-left: auto;
+  }
+
+  .panto-home-page .panto-cart-link img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .panto-home-page .panto-cart-link .panto-cart-count {
+    top: -24px;
+    right: -6px;
+    width: 20px;
+    height: 25px;
+  }
+
+  .panto-home-page .panto-mobile-navigation {
+    position: relative;
+    display: block;
+    margin-left: 18px;
+  }
+
+  .panto-home-page .panto-mobile-navigation summary {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgb(255 255 255 / 60%);
+    border-radius: 50%;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .panto-home-page .panto-mobile-navigation summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .panto-home-page .panto-mobile-navigation summary span {
+    width: 16px;
+    height: 1px;
+    background: #fff;
+  }
+
+  .panto-home-page .panto-mobile-navigation nav {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    display: flex;
+    min-width: 160px;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 14px;
+    color: var(--home-ink);
+    background: #fff;
+    box-shadow: 0 12px 30px rgb(0 0 0 / 18%);
+  }
+
+  .panto-home-page .panto-mobile-navigation nav .panto-wishlist-navigation-count {
+    border-color: rgb(30 30 30 / 35%);
+  }
+
+  .panto-home-page .panto-hero-title {
+    top: 132px;
+    width: calc(100% - 32px);
+    font-size: clamp(24px, 7vw, 38px);
+    line-height: 1.14;
+  }
+
+  .panto-home-page .panto-hero-title span + span {
+    margin-top: 0;
+  }
+
+  .panto-home-page .panto-hero-copy {
+    top: clamp(220px, calc(170px + 11vw), 250px);
+    width: calc(100% - 56px);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .panto-home-page .panto-hero-compact .panto-hero-title {
+    top: 120px;
+    font-size: clamp(30px, 8vw, 42px);
+    line-height: 1.12;
+  }
+
+  .panto-home-page .panto-hero-compact .panto-hero-copy {
+    top: clamp(245px, calc(190px + 11vw), 265px);
+  }
+
+  .panto-home-page .panto-search-form {
+    top: 394px;
+    width: min(344px, calc(100% - 48px));
+  }
+
+  .panto-home-page .panto-hero-hotspots > img:nth-child(1) {
+    top: 62%;
+    left: 9%;
+  }
+
+  .panto-home-page .panto-hero-hotspots > img:nth-child(2) {
+    top: 69%;
+    left: 57%;
+  }
+
+  .panto-home-page .panto-hero-hotspots > img:nth-child(3) {
+    top: 75%;
+    right: 4%;
+  }
+
+  .panto-home-page .panto-features-section {
+    padding: 56px 0;
+  }
+
+  .panto-home-page .panto-features-layout,
+  .panto-home-page .panto-experience-layout,
+  .panto-home-page .panto-materials-layout {
+    width: calc(100% - 48px);
+  }
+
+  .panto-home-page .panto-features-layout {
+    gap: 32px;
+  }
+
+  .panto-home-page .panto-features-title,
+  .panto-home-page .panto-section-title,
+  .panto-home-page .panto-experience-copy h2,
+  .panto-home-page .panto-materials-copy h2,
+  .panto-home-page .panto-testimonials-heading h2 {
+    font-size: 32px;
+  }
+
+  .panto-home-page .panto-feature-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .panto-home-page .panto-feature-item h3 {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  .panto-home-page .panto-feature-item p {
+    min-height: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .panto-home-page .panto-products-container,
+  .panto-home-page .panto-testimonials-content {
+    width: calc(100% - 48px);
+  }
+
+  .panto-home-page .panto-products-container {
+    width: calc(100% - 32px);
+  }
+
+  .panto-home-page .panto-contact-layout {
+    width: calc(100% - 32px);
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .panto-home-page .panto-contact-section {
+    padding: 68px 0;
+  }
+
+  .panto-home-page .panto-contact-copy {
+    padding-top: 0;
+  }
+
+  .panto-home-page .panto-contact-copy h2 {
+    font-size: 32px;
+  }
+
+  .panto-home-page .panto-contact-copy .panto-body-copy {
+    font-size: 15px;
+  }
+
+  .panto-home-page .panto-contact-form {
+    gap: 20px;
+    padding: 22px 18px;
+  }
+
+  .panto-home-page .panto-contact-fields {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .panto-home-page .panto-contact-message-field {
+    grid-column: auto;
+  }
+
+  .panto-home-page .panto-products-section {
+    padding: 52px 0 70px;
+  }
+
+  .panto-home-page .panto-category-tabs {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .panto-home-page .panto-category-button {
+    min-width: 0;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .panto-home-page .panto-product-grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 96px;
+    margin-top: 96px;
+  }
+
+  .panto-home-page .panto-products-section-shop .panto-product-grid {
+    margin-top: 56px;
+  }
+
+  .panto-home-page .panto-product-card {
+    width: 100%;
+  }
+
+  .panto-home-page .panto-view-all {
+    margin-top: 48px;
+  }
+
+  .panto-home-page .panto-experience-section {
+    padding-top: 72px;
+  }
+
+  .panto-home-page .panto-experience-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .panto-home-page .panto-experience-photo {
+    height: min(70vw, 360px);
+  }
+
+  .panto-home-page .panto-experience-copy {
+    padding-top: 0;
+  }
+
+  .panto-home-page .panto-section-eyebrow {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .panto-home-page .panto-experience-copy .panto-body-copy,
+  .panto-home-page .panto-materials-copy .panto-body-copy {
+    font-size: 15px;
+  }
+
+  .panto-home-page .panto-materials-section {
+    padding: 100px 0 60px;
+  }
+
+  .panto-home-page .panto-materials-layout {
+    gap: 34px;
+  }
+
+  .panto-home-page .panto-materials-gallery {
+    width: 100%;
+    height: 360px;
+  }
+
+  .panto-home-page .panto-materials-main-image {
+    top: 34px;
+    width: 78%;
+    height: 290px;
+    border-radius: 14px;
+  }
+
+  .panto-home-page .panto-materials-top-image {
+    width: 31%;
+    height: 150px;
+    border-radius: 12px;
+  }
+
+  .panto-home-page .panto-materials-bottom-image {
+    top: 190px;
+    width: 31%;
+    height: 150px;
+    border-radius: 12px;
+  }
+
+  .panto-home-page .panto-testimonials-section {
+    height: auto;
+    padding: 50px 0 72px;
+  }
+
+  .panto-home-page .panto-testimonials-heading .panto-section-eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .panto-home-page .panto-testimonials-content {
+    margin-top: 34px;
+  }
+
+  .panto-home-page .panto-review-card {
+    width: min(370px, calc(100vw - 72px));
+    height: auto;
+    aspect-ratio: 370 / 476;
+    flex-basis: min(370px, calc(100vw - 72px));
+  }
+
+  .panto-home-page .panto-review-list {
+    gap: 18px;
+  }
+
+  .panto-home-page .panto-review-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .panto-home-page .panto-review-previous {
+    left: -14px;
+  }
+
+  .panto-home-page .panto-review-next {
+    right: -14px;
+  }
+
+  .panto-home-page .panto-footer {
+    min-height: 0;
+    padding: 56px 24px 120px;
+  }
+
+  .panto-home-page .panto-footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 24px;
+  }
+
+  .panto-home-page .panto-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .panto-home-page .panto-footer-logo {
+    margin-bottom: 14px;
+  }
+
+  .panto-home-page .panto-footer-bottom {
+    right: 24px;
+    bottom: 24px;
+    left: 24px;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 11px;
+  }
+
+  .panto-home-page .panto-footer-bottom div {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .panto-home-page .panto-hero-copy {
+    top: 238px;
+  }
+}
